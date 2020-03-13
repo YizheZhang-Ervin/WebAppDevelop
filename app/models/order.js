@@ -21,10 +21,11 @@ let OrderSchema = new Schema(
   { versionkey: false }
 );
 
+// get virtual attribute
 OrderSchema.virtual("id").get(function() {
   return this._id.toHexString();
 });
-
+// when use toJSON to convert, it will contain virtuals attribute
 OrderSchema.set("toJSON", {
   virtuals: true
 });
