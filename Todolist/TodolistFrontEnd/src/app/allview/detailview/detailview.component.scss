@@ -1,0 +1,21 @@
+.detailv_grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 20% 75%;
+    text-align: center;
+
+    .ta001{
+        background-color: transparent;
+        border:none;
+        text-align: center;
+        color:white;
+        font-size:20px;
+        resize: none;
+    }
+    
+}
+
+.subapp_title{
+    text-align: center;
+    border-bottom:1.5px solid white;
+}

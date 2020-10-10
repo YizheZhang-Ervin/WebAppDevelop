@@ -1,0 +1,24 @@
+<!-- title here -->
+<div class="allview" [style.display]="!detailview?'block':'none'">
+    <p class="subapp_title">All Todolist View</p>
+    <div class="allv_grid grid_title">
+        <p>Title</p>
+        <p>Due Date & Time</p>
+        <p>Detail</p>
+        <p>Status</p>
+    </div>
+
+    <div class="allv_grid" *ngFor="let dt of todolistdata" (click)='onDetailview(dt);$event.preventDefault();'>
+        <p>{{dt.title}}</p>
+        <p>{{dt.DueDate}}<br>{{dt.DueTime}}</p>
+        <!-- <button (click)='onDetailview(dt)'>View Details</button> -->
+        <div [ngSwitch]='dt.status' class='btncls'>
+            <button *ngSwitchCase=false (click)='update(dt);$event.stopPropagation();'>In Progress</button>
+            <button *ngSwitchCase=true (click)='update(dt);$event.stopPropagation();'>Completed</button>
+        </div>
+        <button (click)='delete(dt)'>Delete</button>
+        <p class='Dates'>Created:{{dt.createDate | date:'yyyy-MM-dd HH:mm:ss'}}<br>Updated:{{dt.updateDate | date:'yyyy-MM-dd HH:mm:ss'}}</p>
+    </div>
+</div>
+
+<app-detailview *ngIf="detailview" [data]='detailData'></app-detailview>

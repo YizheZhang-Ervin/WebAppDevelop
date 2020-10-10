@@ -1,0 +1,46 @@
+.addview{
+    border:2px dashed white;
+}
+
+.addv_grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 20% 75%;
+    text-align: center;
+
+    .ta001{
+        background-color: transparent;
+        border:none;
+        text-align: center;
+        color:white;
+        font-size:20px;
+        border-bottom:1.5px solid white;
+    }
+
+    button{
+        background-color: transparent;
+        color:white;
+        font-size: large;
+        grid-column: 1/3;
+        margin: 2% auto;
+        border: 2px outset transparent;
+        text-decoration: underline;
+    }
+
+}
+
+.subapp_title{
+    text-align: center;
+    border-bottom:1.5px solid white;
+}
+
+.ipt{
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-bottom:1.5px solid white;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}

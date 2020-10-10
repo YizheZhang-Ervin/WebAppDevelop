@@ -1,0 +1,24 @@
+{
+  "name": "assignment-8-yizhezhang-ervin",
+  "version": "1.0.0",
+  "description": "> assignment-8-YizheZhang-Ervin",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2020/assignment-8-YizheZhang-Ervin.git"
+  },
+  "author": "yizhe zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2020/assignment-8-YizheZhang-Ervin/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2020/assignment-8-YizheZhang-Ervin#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5"
+  }
+}

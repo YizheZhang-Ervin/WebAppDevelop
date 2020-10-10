@@ -1,0 +1,14 @@
+<div class="addview">
+    <p class="subapp_title">Add View</p>
+    <div class="addv_grid">
+        <p>title:</p>
+        <input class="ipt" type="text" #title placeholder="title">
+        <p>Due Date:</p>
+        <input class="ipt" type="date" #dueDate placeholder="due date">
+        <p>Due Time:</p>
+        <input class="ipt" type="time" #dueTime placeholder="due time">
+        <p>Description:</p>
+        <input class="ta001" type="text" #desc placeholder="description">
+        <button name="submit" (click)="createnew(title.value,dueDate.value,dueTime.value,desc.value);title.value='';dueDate.value='';dueTime.value='';desc.value=''">Submit</button>
+    </div>
+</div>
